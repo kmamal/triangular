@@ -5,9 +5,9 @@ const {
 	LowerLeft,
 	LowerRight,
 } = require('.')
-const { Array2d } = require('../2d')
+const { Array2d } = require('@kmamal/array-2d')
 
-test("array.triangular.upper-left", (t) => {
+test("structs.triangular.upper-left", (t) => {
 	const N = 10
 	const a = new UpperLeft(N)
 	const b = new Array2d(N, N)
@@ -27,7 +27,7 @@ test("array.triangular.upper-left", (t) => {
 })
 
 
-test("array.triangular.upper-right", (t) => {
+test("structs.triangular.upper-right", (t) => {
 	const N = 10
 	const a = new UpperRight(N)
 	const b = new Array2d(N, N)
@@ -47,7 +47,7 @@ test("array.triangular.upper-right", (t) => {
 })
 
 
-test("array.triangular.lower-left", (t) => {
+test("structs.triangular.lower-left", (t) => {
 	const N = 10
 	const a = new LowerLeft(N)
 	const b = new Array2d(N, N)
@@ -67,7 +67,7 @@ test("array.triangular.lower-left", (t) => {
 })
 
 
-test("array.triangular.lower-right", (t) => {
+test("structs.triangular.lower-right", (t) => {
 	const N = 10
 	const a = new LowerRight(N)
 	const b = new Array2d(N, N)

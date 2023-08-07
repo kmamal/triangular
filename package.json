@@ -8,7 +8,9 @@
   },
   "license": "MIT",
   "main": "./src/index.js",
-  "exports": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "scripts": {
     "test": "npx @kmamal/testing",
     "update-exports": "node ./scripts/update-exports.mjs"
@@ -17,6 +19,7 @@
     "@kmamal/util": "^0.1.13"
   },
   "devDependencies": {
+    "@kmamal/array-2d": "^0.0.1",
     "@kmamal/testing": "^0.0.24"
   }
 }
